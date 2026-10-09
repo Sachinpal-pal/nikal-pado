@@ -1,0 +1,226 @@
+body {
+    /* एमरल्ड और नेचर थीम वाला शानदार मॉडर्न ग्लोइंग बैकग्राउंड जो कभी फेल नहीं होगा */
+    background-color: #064e3b;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.35) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(5, 150, 105, 0.45) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(4, 120, 87, 0.6) 0px, transparent 50%),
+        linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+    background-attachment: fixed;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    /* फ्रॉस्टेड ग्लास लुक */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    max-width: 520px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #064e3b;
+    margin: 0;
+}
+
+.badge {
+    background-color: #d1fae5;
+    color: #065f46;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #334155;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s;
+    background: #f8fafc;
+}
+
+input:focus {
+    border-color: #059669;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.15);
+}
+
+button#makePlanBtn {
+    width: 100%;
+    background: linear-gradient(135deg, #059669, #047857);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+button#makePlanBtn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.output-card {
+    margin-top: 24px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.output-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #064e3b;
+}
+
+.hidden {
+    display: none;
+}
+
+.plan-box {
+    background: white;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d1fae5;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.task-item input[type="checkbox"] {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    accent-color: #059669;
+    cursor: pointer;
+}
+
+.journal-section {
+    margin-top: 24px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: 14px;
+}
+
+.journal-section h3 {
+    margin: 0 0 2px 0;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.journal-sub {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.journal-row {
+    display: flex;
+    gap: 8px;
+}
+
+button#saveNoteBtn {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#saveNoteBtn:hover {
+    background-color: #1e293b;
+}
+
+#journalList {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #475569;
+}
+
+.empty-note {
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.note-item {
+    background: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}

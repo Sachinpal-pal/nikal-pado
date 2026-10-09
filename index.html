@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikal Pado - Touch Grass Challenge</title>
+    <!-- CSS फाइल को लिंक किया गया है -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 Nikal Pado</h1>
+            <span class="badge">Hacktoberfest '26</span>
+        </header>
+        <p class="subtitle">Plan it in 30 seconds. Then put the screen down.</p>
+
+        <div class="form-group">
+            <label>Where are you? (park, lake, street...)</label>
+            <input type="text" id="locationInput" value="Neighbourhood park">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Season / Weather</label>
+                <input type="text" id="weatherInput" value="Clear autumn evening">
+            </div>
+            <div class="form-group">
+                <label>Free Time (Minutes)</label>
+                <input type="number" id="timeInput" value="45">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Interests</label>
+            <input type="text" id="interestsInput" value="Birding, walking, fresh air">
+        </div>
+
+        <button id="makePlanBtn">✨ Make My Plan</button>
+
+        <!-- आउटपुट सेक्शन जो क्लिक करने पर दिखेगा -->
+        <div id="outputSection" class="output-card hidden">
+            <h3>📋 Your Outing Plan</h3>
+            <div id="planContent"></div>
+        </div>
+
+        <!-- फील्ड जर्नल सेक्शन -->
+        <div class="journal-section">
+            <h3>📖 Field Journal</h3>
+            <p class="journal-sub">Saved locally on this device.</p>
+            <div class="journal-row">
+                <input type="text" id="journalInput" placeholder="What did you see, hear or smell?">
+                <button id="saveNoteBtn">Save note</button>
+            </div>
+            <div id="journalList">
+                <p class="empty-note">No notes yet. Write the first one after your outing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript फाइल को लिंक किया गया है -->
+    <script src="script.js"></script>
+</body>
+</html>
